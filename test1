@@ -1,0 +1,33 @@
+### 팰린드롬
+text1 = input("입력 : ")
+ 
+result = True               
+for i in range(len(text1) // 2):      
+    if text1[i] != text1[-1 -i]:      
+        result = False        
+        break
+    else:
+        print(result)     
+​
+### 문자열에서 분리
+text = "h안e녕l하l세o요"
+kr = ''
+eng = ''
+for i in text:
+  if ord(i) <= 128:
+    eng += i
+  else:
+    kr += i
+print(kr, eng)
+​
+### 2진법 변환
+bin = ''
+num = int(input("숫자 입력 : "))
+# num = 2
+
+while num > 0 :
+    bin = str(num % 2) + bin
+    num = num // 2
+
+print(bin)
+# print(f"({bin})") ​
